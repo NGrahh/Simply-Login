@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Quicksand:wght@500&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /*Para centrar verticalmente*/
+    background-color: rgb(214, 231, 214);
+}
+img{
+    width: 60px;
+    background-color: rgb(214, 231, 214);
+    border-radius: 80px;
+}
+.brand-name{
+    font-family: 'Oswald', sans-serif;
+    font-weight: 700;
+}
+h1{
+    font-family: 'Quicksand';
+    font-size: 1.6vh;
+    font-weight: 300;
+}
+p{
+    font-family: 'Quicksand';
+    margin-bottom: 1vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(109, 134, 109);
+}
+form{
+    width: 50vh;
+    height: 54vh;
+    background-color:rgb(231, 227, 227);
+    display: flex;/*De esta linea hasta la 27 es importante usarla de tipo flex, para que asi pueda moverse libremente a través del body, por ello se hace un flex direction columna, para que se direccione verticalmente*/
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;/*Se debe usar esta sentencia para poder centrar todo lo que está dentro del form*/
+    box-shadow: 0px 0px 30px;
+}
+input[type="text"], input[type="password"]{
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+    outline: none;
+    padding: 5px;
+    background-color: #F7F7F7;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    width: 35vh;
+}
+input[type="button"]{
+    border-radius: 10px;
+    border: 2px solid #6d6d6d;
+    height: 3vh;
+    font-family: 'Quicksand';
+    font-weight: bold;
+    color: #6d6d6d;
+    width: 25vh;
+    height: 4vh;
+}
+input[type="button"]:hover{
+    cursor: pointer;
+    color: rgb(109, 134, 109);
+    border: rgb(109, 134, 109) 2px solid;
+}
